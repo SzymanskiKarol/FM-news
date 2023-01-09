@@ -26,7 +26,6 @@ img {
 }
 
 body {
-    width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -87,12 +86,12 @@ nav {
 .blog-title {
     font-size: 3rem;
     color: var(--Very-dark-blue);
-    width: 300px;
+    max-width: 300px;
 }
 
 .blog-content {
     color: var(--Dark-grayish-blue);
-    width: 350px;
+    max-width: 350px;
     line-height: 1.5;
 }
 
@@ -229,16 +228,18 @@ nav {
     body {
         align-items: flex-start;
     }
+    
 
     nav {
         padding-inline: 1rem;
     }
 
     .nav-links {
-        /* display: none; */
+        display: none;
     }
 
     .open {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 100px 0 0 10%;
